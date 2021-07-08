@@ -50,6 +50,7 @@ inoremap jk <esc>
 
 let g:startify_bookmarks = [
       \ {'w': '~/Documents/Vodafone/maac-vhub/packages/gatsby-vf-vhub-contentful'},
+      \ {'v': '~/.config/nvim/init.vim'},
       \ ]
 
 let g:startify_lists = [
