@@ -1,4 +1,6 @@
+source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/themes/airline.vim
+source $HOME/.config/nvim/keys/which-key.vim
 
 set nocompatible
 filetype off
@@ -13,6 +15,12 @@ Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mhinz/vim-startify'
+" Better Syntax Support
+Plug 'sheerun/vim-polyglot'
+" Auto pairs for '(' '[' '{'
+Plug 'jiangmiao/auto-pairs'
+" Display Available Key Bindings
+Plug 'liuchengxu/vim-which-key'
 call plug#end()
 
 if (has("termguicolors"))
@@ -43,7 +51,16 @@ set laststatus=2
 inoreabbrev teh the
 cnoreabbrev Wq wq
 
+
 " Mappings
+let mapleader = ","
+map <Leader>so :source ~/.config/nvim/init.vim<CR>
+
+" Mappings - Normal Mode
+nnoremap <leader><space> :noh<CR>
+nnoremap <leader>m :NERDTreeToggle<CR>
+
+" Mappings - Insert Mode
 " inoremap <C-1> <space>=><space>
 " inoremap <C-s> <Esc>:w<CR>a
 inoremap jk <esc>
