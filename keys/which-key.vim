@@ -64,4 +64,5 @@ let g:which_key_map.s = {
       \ }
 
 " Register which key map
+" Why is this causing errors?
 call which_key#register(',', "g:which_key_map")

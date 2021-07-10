@@ -1,5 +1,7 @@
 source $HOME/.config/nvim/vim-plug/plugins.vim
+source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/themes/airline.vim
+source $HOME/.config/nvim/keys/mappings.vim
 source $HOME/.config/nvim/keys/which-key.vim
 
 set nocompatible
@@ -32,20 +34,20 @@ colorscheme night-owl
 map <silent> <C-n> :NERDTreeFocus<CR>
 
 "set foldmethod=syntax
-set ignorecase
-set hlsearch
-set incsearch
-set autoindent
-set smartindent
-set expandtab
-set fileencoding=utf-8
-set encoding=utf-8
-set backspace=indent,eol,start
-set ts=2 sts=2 sw=2 expandtab
-set smartindent
-set number relativenumber
-set showcmd
-set laststatus=2
+"set ignorecase
+"set hlsearch
+"set incsearch
+"set autoindent
+"set smartindent
+"set expandtab
+"set fileencoding=utf-8
+"set encoding=utf-8
+"set backspace=indent,eol,start
+"set ts=2 sts=2 sw=2 expandtab
+"set smartindent
+"set number relativenumber
+"set showcmd
+"set laststatus=2
 
 " Abbreviations
 inoreabbrev teh the
@@ -53,7 +55,6 @@ cnoreabbrev Wq wq
 
 
 " Mappings
-let mapleader = ","
 map <Leader>so :source ~/.config/nvim/init.vim<CR>
 
 " Mappings - Normal Mode
@@ -63,7 +64,6 @@ nnoremap <leader>m :NERDTreeToggle<CR>
 " Mappings - Insert Mode
 " inoremap <C-1> <space>=><space>
 " inoremap <C-s> <Esc>:w<CR>a
-inoremap jk <esc>
 
 let g:startify_bookmarks = [
       \ {'w': '~/Documents/Vodafone/maac-vhub/packages/gatsby-vf-vhub-contentful'},
